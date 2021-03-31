@@ -1,15 +1,14 @@
 import Hapi from 'hapi';
 
-const server = new Hapi.Server();
-
-server.connection({
-    port: 8080
+const server = new Hapi.Server({
+    port: 3333,
+    host: 'localhost'
 });
 
 server.route({
     method: 'GET',
     path: '/hello',
-    handler: ( request, reply ) => {
+    handler: (request, reply) => {
         reply('Hello World!');
     }
 })
