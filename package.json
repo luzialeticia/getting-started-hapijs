@@ -1,0 +1,7 @@
+{
+  "name": "hapijs-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Letícia Furtado <leticialuzia@icloud.com>",
+  "license": "MIT"
+}
