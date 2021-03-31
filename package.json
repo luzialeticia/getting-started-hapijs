@@ -8,5 +8,9 @@
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "hapi": "^18.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bootstrap.js"
   }
 }
