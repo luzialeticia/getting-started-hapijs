@@ -1,15 +1,15 @@
 import Hapi from 'hapi';
 
 const server = new Hapi.Server({
-    port: 3333,
-    host: 'localhost'
+    host: 'localhost',
+    port: 3000
 });
 
 server.route({
     method: 'GET',
     path: '/hello',
-    handler: (request, reply) => {
-        reply('Hello World!');
+    handler: (request, h) => {
+        return 'Hello World!';
     }
 })
 
